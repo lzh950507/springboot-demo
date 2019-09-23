@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /mybatis-plus
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql:///test
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis-plus:
+  mapper-locations: classpath*:/mybatis/mapper/*Mapper.xml
+  type-aliases-package: com.han.demo.mybatisplusdemo.entity
